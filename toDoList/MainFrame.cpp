@@ -19,14 +19,22 @@ void MainFrame::CreateControls()
 
 	panel = new wxPanel(this);
 	panel->SetFont(mainFont);
+	panel->SetBackgroundColour(wxT("LIGHTBLUE"));
 
 	headlineText = new wxStaticText(panel, wxID_ANY, "To Do List");
 	headlineText->SetFont(headLineFont);
 	
 	inputField = new wxTextCtrl(panel, wxID_ANY, "", wxDefaultPosition, wxDefaultSize, wxTE_PROCESS_ENTER);
+	inputField->SetBackgroundColour(wxT("LIGHTPINK"));
+
 	addButton = new wxButton(panel, wxID_ANY, "Add");
+	addButton->SetBackgroundColour(wxT("LIGHTPINK"));
+
 	checkListBox = new wxCheckListBox(panel, wxID_ANY);
+	checkListBox->SetBackgroundColour(wxT("LIGHTPINK"));
+
 	clearButton = new wxButton(panel, wxID_ANY, "Clear");
+	clearButton->SetBackgroundColour(wxT("LIGHTPINK"));
 }
 
 void MainFrame::SetupSizers()
