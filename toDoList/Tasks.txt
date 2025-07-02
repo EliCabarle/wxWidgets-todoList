@@ -1,5 +1,5 @@
 3
 
-Sample-Task-1 0
-Sample-Task-2 0
-Sample-Task-3 0
+Sample-1 0
+Sample-2 0
+Sample-3 0
